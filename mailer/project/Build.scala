@@ -4,8 +4,8 @@ import Keys._
 object MinimalBuild extends Build {
   
 
-  lazy val buildVersion =  "2.2.0"
-  lazy val playVersion =  "2.2.0"
+  lazy val buildVersion =  "2.2.2"
+  lazy val playVersion =  "2.2.2"
   
   lazy val typesafeSnapshot = "Typesafe Snapshots Repository" at "http://repo.typesafe.com/typesafe/snapshots/"
   lazy val typesafe = "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
@@ -25,6 +25,6 @@ object MinimalBuild extends Build {
     javacOptions += "-Xlint:unchecked",
     libraryDependencies += "com.typesafe.play" %% "play" % playVersion % "provided",
     libraryDependencies += "org.apache.commons" % "commons-email" % "1.2",
-    libraryDependencies += "com.typesafe" %% "play-plugins-util" % buildVersion
+    libraryDependencies += "com.typesafe" %% "play-plugins-util" % "2.2.0"
   )
 }
